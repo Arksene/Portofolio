@@ -2,15 +2,102 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'none'; 
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'none'; 
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self'; font-src 'self' https://fonts.gstatic.com;
       
       require-trusted-types-for 'script'
-">
+"
+    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Rubik+Iso&display=swap"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "ADLaM Display", cursive;
+      }
+
+      .container {
+        max-width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        height: 8%;
+        background-color: aquamarine;
+      }
+
+      nav p {
+        flex: 1;
+        padding: 20px;
+        align-items: center;
+        font-size: 200%;
+        color: white;
+      }
+
+      nav ul {
+        display: flex;
+        flex: 1;
+        list-style: none;
+        justify-content: flex-end;
+        width: 100%;
+        padding-right: 5%;
+      }
+
+      nav ul li {
+        margin-right: 50px;
+      }
+
+      nav ul li:last-child {
+        margin-right: 0;
+      }
+
+      nav li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-size: 120%;
+        border-radius: 20%;
+      }
+      nav li a:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .row {
+        display: flex;
+        height: 80%;
+        align-items: center;
+      }
+      .col1 {
+        flex: 1;
+        padding: 30px 30px;
+      }
+      .col2 {
+        display: flex;
+        flex: 1;
+        padding: 30px 30px;
+        justify-content: center;
+      }
+      .row .col2 img {
+        max-width: 100%;
+        width: 50%;
+      }
+
+      .row .col1 p {
+        font-size: 20px;
+        margin-top: 12px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
